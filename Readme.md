@@ -37,8 +37,8 @@ npm run dev
 
 #### Complete Test Coverage
 
-> Unit & integration tests via Jest.
-> Full browser flow via Cypress.
+> Unit tests using Jest
+> e2e tests using Cypress
 
 --------------------------------------------
 
@@ -74,4 +74,5 @@ npx cypress open (open cypress in another terminal)
 
 
 ### Limitation 
+
 > Select dropdown (popup), has the default width (OS behaviour). 
