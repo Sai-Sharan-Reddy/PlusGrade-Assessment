@@ -1,0 +1,132 @@
+.form {
+    margin: 3rem;
+    padding: 1rem;
+
+    .headerBlock {
+        font-size: 2.5rem;
+    }
+    
+    .incomeBlock {
+       padding: 1rem;
+
+       .label {
+            display: flex;
+            font-family: sans-serif;
+            font-size: 1.5rem;
+        }
+
+        .incomeHelperText {
+            font-size: 1.1rem;
+            color: rgb(224, 89, 89);
+            text-align: start;
+        }
+    }
+
+    .yearBlock {
+       padding: 1rem;
+
+       .label {
+            display: flex;
+            font-family: sans-serif;
+            font-size: 1.5rem;
+        }
+    }
+
+    .submitButton {
+        background-color: #007bff;
+        color: white;
+        padding: 1rem;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin: 1rem;
+    }
+
+    .submitButton:hover {
+        background-color: #0056b3;
+    }
+
+    .submitButton:disabled {
+        background-color: #a8a6a7;
+        cursor:not-allowed;
+    }
+}
+
+
+@media (max-width: 768px) {
+  .form {
+    margin: 1.25rem;
+    padding: 0.75rem;
+
+    .headerBlock {
+        font-size: 2rem;
+    }
+
+    .yearBlock .incomeBlock {
+        width: 100%;
+        padding: 0.75rem 0;
+        overflow: hidden;
+        padding: 0;
+    }
+  }
+
+  .form .incomeBlock input[type="number"],
+  .form .yearBlock select {
+    width: 100%;
+    max-width: 100%;
+    padding: 0.65rem 0.75rem;
+    font-size: .8rem;
+    box-sizing: border-box;
+  }
+
+  .form .label {
+    font-size: 1.1rem;
+  }
+
+  .form .submitButton {
+    width: 100%;
+    margin: 0.5rem 0 0;
+    padding: 0.9rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+/* ≤ 480px: compact typography */
+@media (max-width: 480px) {
+  .form {
+    margin: 1rem;
+    padding: 0.75rem;
+
+    .headerBlock {
+        font-size: 1.75rem;
+    }
+
+    .incomeBlock {
+        padding: 1rem 0;
+        .label {
+            font-size: 1.25rem;
+        }
+
+        .incomeHelperText {
+            font-size: 0.95rem;
+        }
+    }
+
+    .yearBlock {
+        padding: 0 0 1rem 0;
+        .label {
+            font-size: 1.25rem;
+        }
+    }
+
+    .submitButton {
+        padding: 1rem;
+        border-radius: 10px;
+    }
+  }
+}
+
+
+

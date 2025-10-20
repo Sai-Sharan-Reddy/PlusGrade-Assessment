@@ -1,0 +1,86 @@
+.errorBody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.errorBody img {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  margin: 10px;
+}
+
+.errorText {
+  max-width: 400px;
+  margin: 10px;
+  text-align: center;
+}
+
+.errorText h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.errorText p {
+  color: #555;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* ─── Responsive error layout ─────────────────────────────────── */
+
+/* Medium screens: slightly smaller image and tighter layout */
+@media (max-width: 1024px) {
+  .errorBody {
+    margin: 2rem;
+    gap: 0.5rem;
+  }
+  .errorBody img {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+/* Tablets & below: stack image and text vertically */
+@media (max-width: 768px) {
+  .errorBody {
+    flex-direction: column;
+    text-align: center;
+    margin: 1.5rem;
+  }
+  .errorText {
+    max-width: 480px;
+  }
+  .errorText h1 {
+    font-size: 1.75rem;
+  }
+  .errorText p {
+    font-size: 1.05rem;
+  }
+}
+
+/* Small phones: compact everything */
+@media (max-width: 480px) {
+  .errorBody {
+    margin: 1rem;
+    padding: 16px;
+  }
+  .errorBody img {
+    width: 180px;
+    height: 180px;
+    margin: 6px;
+  }
+  .errorText h1 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+  .errorText p {
+    font-size: 1rem;
+    margin-bottom: 14px;
+  }
+}
